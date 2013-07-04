@@ -18,6 +18,12 @@
 		3811DAA71785158D008B2643 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3811DAA61785158D008B2643 /* Default-568h@2x.png */; };
 		3811DAAA1785158D008B2643 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3811DAA91785158D008B2643 /* ViewController.m */; };
 		3811DAAD1785158D008B2643 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3811DAAB1785158D008B2643 /* ViewController.xib */; };
+		3811DAB5178515B5008B2643 /* ColorPickerTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3811DAB4178515B5008B2643 /* ColorPickerTestView.m */; };
+		3811DAB8178515D0008B2643 /* WheelColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3811DAB7178515D0008B2643 /* WheelColorView.m */; };
+		3811DABB178515F2008B2643 /* GridColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3811DABA178515F2008B2643 /* GridColorView.m */; };
+		3811DABE1785549D008B2643 /* ColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3811DABD1785549D008B2643 /* ColorView.m */; };
+		3811DAC117857A77008B2643 /* Screen Shot 2013-07-04 at 5.37.52 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 3811DABF17857A77008B2643 /* Screen Shot 2013-07-04 at 5.37.52 PM.png */; };
+		3811DAC217857A77008B2643 /* Screen Shot 2013-07-04 at 5.39.08 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 3811DAC017857A77008B2643 /* Screen Shot 2013-07-04 at 5.39.08 PM.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,16 @@
 		3811DAA81785158D008B2643 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3811DAA91785158D008B2643 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3811DAAC1785158D008B2643 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		3811DAB3178515B5008B2643 /* ColorPickerTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerTestView.h; sourceTree = "<group>"; };
+		3811DAB4178515B5008B2643 /* ColorPickerTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerTestView.m; sourceTree = "<group>"; };
+		3811DAB6178515D0008B2643 /* WheelColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheelColorView.h; sourceTree = "<group>"; };
+		3811DAB7178515D0008B2643 /* WheelColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WheelColorView.m; sourceTree = "<group>"; };
+		3811DAB9178515F2008B2643 /* GridColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridColorView.h; sourceTree = "<group>"; };
+		3811DABA178515F2008B2643 /* GridColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridColorView.m; sourceTree = "<group>"; };
+		3811DABC1785549D008B2643 /* ColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorView.h; sourceTree = "<group>"; };
+		3811DABD1785549D008B2643 /* ColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorView.m; sourceTree = "<group>"; };
+		3811DABF17857A77008B2643 /* Screen Shot 2013-07-04 at 5.37.52 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 2013-07-04 at 5.37.52 PM.png"; path = "../../../../Desktop/Screen Shot 2013-07-04 at 5.37.52 PM.png"; sourceTree = "<group>"; };
+		3811DAC017857A77008B2643 /* Screen Shot 2013-07-04 at 5.39.08 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 2013-07-04 at 5.39.08 PM.png"; path = "../../../../Desktop/Screen Shot 2013-07-04 at 5.39.08 PM.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +104,16 @@
 				3811DAA81785158D008B2643 /* ViewController.h */,
 				3811DAA91785158D008B2643 /* ViewController.m */,
 				3811DAAB1785158D008B2643 /* ViewController.xib */,
+				3811DAB3178515B5008B2643 /* ColorPickerTestView.h */,
+				3811DAB4178515B5008B2643 /* ColorPickerTestView.m */,
+				3811DABC1785549D008B2643 /* ColorView.h */,
+				3811DABD1785549D008B2643 /* ColorView.m */,
+				3811DAB6178515D0008B2643 /* WheelColorView.h */,
+				3811DAB7178515D0008B2643 /* WheelColorView.m */,
+				3811DAB9178515F2008B2643 /* GridColorView.h */,
+				3811DABA178515F2008B2643 /* GridColorView.m */,
+				3811DABF17857A77008B2643 /* Screen Shot 2013-07-04 at 5.37.52 PM.png */,
+				3811DAC017857A77008B2643 /* Screen Shot 2013-07-04 at 5.39.08 PM.png */,
 				3811DA971785158D008B2643 /* Supporting Files */,
 			);
 			path = ColorPickerViewTest;
@@ -163,6 +189,8 @@
 				3811DAA51785158D008B2643 /* Default@2x.png in Resources */,
 				3811DAA71785158D008B2643 /* Default-568h@2x.png in Resources */,
 				3811DAAD1785158D008B2643 /* ViewController.xib in Resources */,
+				3811DAC117857A77008B2643 /* Screen Shot 2013-07-04 at 5.37.52 PM.png in Resources */,
+				3811DAC217857A77008B2643 /* Screen Shot 2013-07-04 at 5.39.08 PM.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +204,10 @@
 				3811DA9D1785158D008B2643 /* main.m in Sources */,
 				3811DAA11785158D008B2643 /* AppDelegate.m in Sources */,
 				3811DAAA1785158D008B2643 /* ViewController.m in Sources */,
+				3811DAB5178515B5008B2643 /* ColorPickerTestView.m in Sources */,
+				3811DAB8178515D0008B2643 /* WheelColorView.m in Sources */,
+				3811DABB178515F2008B2643 /* GridColorView.m in Sources */,
+				3811DABE1785549D008B2643 /* ColorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +293,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ColorPickerViewTest/ColorPickerViewTest-Prefix.pch";
 				INFOPLIST_FILE = "ColorPickerViewTest/ColorPickerViewTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -272,6 +305,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ColorPickerViewTest/ColorPickerViewTest-Prefix.pch";
 				INFOPLIST_FILE = "ColorPickerViewTest/ColorPickerViewTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -296,6 +330,7 @@
 				3811DAB21785158D008B2643 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
