@@ -25,6 +25,9 @@
         self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, size.width, size.height);
         [self createWheelColorImg];
         mpSelectedColPos = CGPointZero;
+        mpVerticalBar = [[VerticalBarView alloc] initWithFrame:CGRectMake(200, 10, 30, 160) withColor:[UIColor redColor]];
+        [self addSubview:mpVerticalBar];
+        [mpVerticalBar release];
     }
     return self;
 }
@@ -72,14 +75,27 @@
 }
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
+
     UITouch* touch = [touches anyObject];
     CGPoint point = [touch locationInView:self];
-    UIColor* color = [self colorAtPoint:point];
-    if (color != nil) {
-        mpSelectedColPos = point;
-        [self.delegate onColorSelected:color];
-        [self setNeedsDisplay];
+    if (CGRectContainsPoint(mpVerticalBar.frame, point)) {
+        CGPoint point2 = [self convertPoint:point toView:mpVerticalBar];
+        UIColor* color = [mpVerticalBar colorAtPoint:point2];
+        if (color != nil) {
+            [self.delegate onColorSelected:color];
+        }
+        
     }
+    else{
+        UIColor* color = [self colorAtPoint:point];
+        if (color != nil) {
+            mpSelectedColPos = point;
+            [mpVerticalBar updateColor:color];
+            [self.delegate onColorSelected:color];
+            [self setNeedsDisplay];
+        }
+    }
+
     
 }
 

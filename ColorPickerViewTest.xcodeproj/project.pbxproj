@@ -22,6 +22,7 @@
 		3811DAB8178515D0008B2643 /* WheelColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3811DAB7178515D0008B2643 /* WheelColorView.m */; };
 		3811DABB178515F2008B2643 /* GridColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3811DABA178515F2008B2643 /* GridColorView.m */; };
 		3811DABE1785549D008B2643 /* ColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3811DABD1785549D008B2643 /* ColorView.m */; };
+		38A3C93A1786FE6A004FB1FA /* VerticalBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A3C9391786FE6A004FB1FA /* VerticalBarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,8 @@
 		3811DABA178515F2008B2643 /* GridColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridColorView.m; sourceTree = "<group>"; };
 		3811DABC1785549D008B2643 /* ColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorView.h; sourceTree = "<group>"; };
 		3811DABD1785549D008B2643 /* ColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorView.m; sourceTree = "<group>"; };
+		38A3C9381786FE6A004FB1FA /* VerticalBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalBarView.h; sourceTree = "<group>"; };
+		38A3C9391786FE6A004FB1FA /* VerticalBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalBarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +106,13 @@
 				3811DAB3178515B5008B2643 /* ColorPickerTestView.h */,
 				3811DAB4178515B5008B2643 /* ColorPickerTestView.m */,
 				3811DABC1785549D008B2643 /* ColorView.h */,
-				3811DABD1785549D008B2643 /* ColorView.m */,
 				3811DAB6178515D0008B2643 /* WheelColorView.h */,
 				3811DAB7178515D0008B2643 /* WheelColorView.m */,
 				3811DAB9178515F2008B2643 /* GridColorView.h */,
+				3811DABD1785549D008B2643 /* ColorView.m */,
 				3811DABA178515F2008B2643 /* GridColorView.m */,
+				38A3C9381786FE6A004FB1FA /* VerticalBarView.h */,
+				38A3C9391786FE6A004FB1FA /* VerticalBarView.m */,
 				3811DA971785158D008B2643 /* Supporting Files */,
 			);
 			path = ColorPickerViewTest;
@@ -200,6 +205,7 @@
 				3811DAB8178515D0008B2643 /* WheelColorView.m in Sources */,
 				3811DABB178515F2008B2643 /* GridColorView.m in Sources */,
 				3811DABE1785549D008B2643 /* ColorView.m in Sources */,
+				38A3C93A1786FE6A004FB1FA /* VerticalBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

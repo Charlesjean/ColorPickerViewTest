@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "ColorView.h"
+#import "VerticalBarView.h"
 @interface WheelColorView : ColorView
 {
     UIImage* mpWheelColorImg;
     CGPoint mpSelectedColPos;
+    VerticalBarView* mpVerticalBar;
 }
 @end
