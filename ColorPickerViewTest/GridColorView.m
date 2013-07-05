@@ -42,7 +42,6 @@ static int LESS_COLOR_TABLE[COLOR_GRID_ROW * COLOR_GRID_COL] = {
                 [colRectArray addObject:[NSValue valueWithCGRect:colorRect]];
             }
         }
-        
     }
     return self;
 }
@@ -65,11 +64,9 @@ static int LESS_COLOR_TABLE[COLOR_GRID_ROW * COLOR_GRID_COL] = {
             CGContextSetFillColorWithColor(context, color.CGColor);
             CGContextAddRect(context, colorRect);
             CGContextFillPath(context);
-            CGContextClosePath(context);
         }
     }
 }
-
 
 - (UIColor*)colorAtPoint:(CGPoint)point
 {
