@@ -59,18 +59,33 @@
 
 - (void)changeColorView
 {
-    if (isGridColorView) {
-        isGridColorView = NO;
-        mpGridColorView.hidden = YES;
-        mpWheelColorView.hidden = NO;
-        [mpChangeViewBtn setTitle:@"Less Color..." forState:UIControlStateNormal];
-    }
-    else{
-        isGridColorView = YES;
-        mpGridColorView.hidden = NO;
-        mpWheelColorView.hidden = YES;
-        [mpChangeViewBtn setTitle:@"More Color..." forState:UIControlStateNormal];
-    }
+    
+    [UIView animateWithDuration:0.4 animations:^{
+        if (isGridColorView) {
+            mpGridColorView.alpha = 0.0;
+            mpWheelColorView.alpha = 1.0;
+        }
+        else{
+            mpGridColorView.alpha = 1.0;
+            mpWheelColorView.alpha = 0.0;
+        }
+        
+    } completion:^(BOOL finished){
+        if (isGridColorView) {
+            mpGridColorView.hidden = YES;
+            mpWheelColorView.hidden = NO;
+            [mpChangeViewBtn setTitle:@"Less Color..." forState:UIControlStateNormal];
+        }
+        else
+        {
+            mpGridColorView.hidden = NO;
+            mpWheelColorView.hidden = YES;
+            [mpChangeViewBtn setTitle:@"More Color..." forState:UIControlStateNormal];
+        }
+        
+        isGridColorView = !isGridColorView;
+        
+    }];
 }
 
 - (void)onColorSelected:(UIColor*)color
