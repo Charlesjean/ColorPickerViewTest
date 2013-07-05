@@ -54,7 +54,6 @@
     CGContextSetFillColorWithColor(context, selectedColor.CGColor);
     CGContextFillRect(context, rect);
     CGContextFillPath(context);
-    CGContextClosePath(context);
 }
 
 - (void)changeColorView
