@@ -32,7 +32,7 @@
     CGContextClip(context);
     float halfWidth = COLOR_PANE_WIDTH / 2.0f;
     float halfHeight = COLOR_PANE_HEIGHT / 2.0f;
-    float radius = sqrtf(halfWidth * halfWidth + halfHeight * halfHeight);
+    float radius = halfWidth;
     CGPoint center;
     center.x = COLOR_PANE_WIDTH / 2.0f;
     center.y = COLOR_PANE_HEIGHT / 2.0f;
@@ -65,6 +65,9 @@
     float radius = sqrtf(center.x * center.x + center.y * center.y);
     float xdis = point.x - center.x;
     float ydis = point.y - center.y;
+    if (xdis * xdis + ydis * ydis > center.x * center.x) {
+        return nil;
+    }
     float hue =atan2f(xdis, ydis);
     if (hue < 0) {
         hue += 2* M_PI;
@@ -79,6 +82,10 @@
 {
     UITouch* touch = [touches anyObject];
     CGPoint point = [touch locationInView:self];
-    [self.delegate onColorSelected:[self colorAtPoint:point]];
+    UIColor* color = [self colorAtPoint:point];
+    if (color != nil) {
+        [self.delegate onColorSelected:color];
+    }
+    
 }
 @end
